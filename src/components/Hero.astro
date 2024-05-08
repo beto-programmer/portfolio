@@ -1,8 +1,18 @@
 ---
+import Mail from "@/icons/Mail.astro"
 import { basics } from "../../cv.json"
 import Section from "./Section.astro"
+import Phone from "@/icons/Phone.astro"
+import Github from "@/icons/Github.astro"
+import Linkedin from "@/icons/Linkedin.astro"
+import X from "@/icons/X.astro"
 const {name, label, image, location, profiles, phone, email} = basics
 const {city, region} = location
+const SOCIAL_ICONS: Record<string, any> = {
+    Github,
+    Linkedin,
+    X,
+}
 ---
 
 <Section>
@@ -11,7 +21,6 @@ const {city, region} = location
             <h1>{name}</h1>
             <h2>{label}</h2>
             <span>
-                <!-- Robar icono -->
                 {city}, {region}
             </span>
             <footer>
@@ -19,14 +28,40 @@ const {city, region} = location
                     email && (
                         <a 
                         href={'mailto:${email}'}
-                        title="Enviar un correo elecronico a ${name} al correo ${email}"
+                        title={`Enviar un correo elecronico a ${name} al correo ${email}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        ></a>
+                        >
+                            <Mail />
+                        </a>
                     )
                 }
+                {
+                    phone && (
+                        <a 
+                        href={'tel:${phone}'}
+                        title={`"Llamar por telefono a ${name} al numero ${phone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+            {
+                profiles.map(({network, url, username}) =>{
+                    const Icon = SOCIAL_ICONS[network]
+                    return (
+                        <a  
+                        href={url}
+                        title={`Ir a la página de @${username} en ${network}`}
+                        target="_blank"
+                        rel="noopener noreferrer"><Icon /></a>
+                )
+                })
+            }
             </footer>
-        </div>
+            </div>
         <figure>
             <img src={image} alt={name}>
         </figure>
