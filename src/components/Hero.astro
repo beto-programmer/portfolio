@@ -6,6 +6,7 @@ import Phone from "@/icons/Phone.astro"
 import Github from "@/icons/Github.astro"
 import Linkedin from "@/icons/Linkedin.astro"
 import X from "@/icons/X.astro"
+import Worldmap from "@/icons/Worldmap.astro"
 const {name, label, image, location, profiles, phone, email} = basics
 const {city, region} = location
 const SOCIAL_ICONS: Record<string, string | any> = {
@@ -21,6 +22,7 @@ const SOCIAL_ICONS: Record<string, string | any> = {
             <h1>{name}</h1>
             <h2>{label}</h2>
             <span>
+                <Worldmap />
                 {city}, {region}
             </span>
             <footer>
@@ -75,9 +77,60 @@ const SOCIAL_ICONS: Record<string, string | any> = {
 <style>
     .container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        flex-direction: row;
         gap: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+    span {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+    h2 {
+        color: #444;
+        text-wrap: balance;
+        font-weight: 500;
+        font-size: 1.1rem
+    }
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 4rem;
+        border: 1px black solid;
+    }
+    footer {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+    footer a {
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all .3 ease;
+        }
+    footer a:hover {
+        background: #eee;
     }
 </style>
