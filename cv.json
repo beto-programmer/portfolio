@@ -34,12 +34,12 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
+      "name": "Microsoft",
+      "position": "Desarrolador Front-End",
+      "url": "https://microsoft.com",
+      "startDate": "2023-01-01",
+      "endDate": "2024-01-01",
+      "summary": "Es mi actual trabajo",
       "highlights": ["Started the company"]
     }
   ],
