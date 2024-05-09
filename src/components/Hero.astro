@@ -8,7 +8,7 @@ import Linkedin from "@/icons/Linkedin.astro"
 import X from "@/icons/X.astro"
 const {name, label, image, location, profiles, phone, email} = basics
 const {city, region} = location
-const SOCIAL_ICONS: Record<string, any> = {
+const SOCIAL_ICONS: Record<string, string | any> = {
     Github,
     Linkedin,
     X,
@@ -48,18 +48,22 @@ const SOCIAL_ICONS: Record<string, any> = {
                         </a>
                     )
                 }
-            {
-                // profiles.map(({network, url, username}) =>{
-                //     const Icon = SOCIAL_ICONS[network]
-                //     return (
-                //         <a  
-                //         href={url}
-                //         title={`Ir a la página de @${username} en ${network}`}
-                //         target="_blank"
-                //         rel="noopener noreferrer"><Icon /></a>
-                // )
-                // })
-            }
+ {
+    profiles.map(({ network, username, url }) => {
+      const Icon = SOCIAL_ICONS[network]
+
+      return (
+        <a
+          href={url}
+          title={`Visitar el perfil de ${name} en ${network}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon />
+        </a>
+      )
+    })
+  }
             </footer>
             </div>
         <figure>
@@ -69,5 +73,11 @@ const SOCIAL_ICONS: Record<string, any> = {
 </Section>
 
 <style>
-
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 1rem;
+    }
 </style>
