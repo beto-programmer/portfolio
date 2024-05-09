@@ -93,9 +93,31 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "name": "HTML5"
+    },
+    {
+      "name": "CSS3"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "ReactJS"
+    },
+    {
+      "name": "SASS"
+    },
+    {
+      "name": "Tailwind"
+    },
+    {
+      "name": "Astro"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "GitHub"
     }
   ],
   "languages": [
