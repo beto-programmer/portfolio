@@ -8,38 +8,45 @@
     "url": "https://johndoe.com",
     "summary": "A summary of John Doe…",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Buenos Aires",
+      "countryCode": "ARG",
+      "region": "Argentina"
     },
     "profiles": [
       {
         "network": "X",
-        "username": "john",
+        "username": "Manuel Perez",
         "url": "https://twitter.com/john"
       },
       {
         "network": "Linkedin",
-        "username": "john",
+        "username": "Manuel Perez",
         "url": "https://twitter.com/john"
       },
       {
         "network": "Github",
-        "username": "john",
+        "username": "beto-programmer",
         "url": "https://twitter.com/john"
       }
     ]
   },
   "work": [
     {
-      "name": "Microsoft",
-      "position": "Desarrolador Front-End",
-      "url": "https://microsoft.com",
-      "startDate": "2023-01-01",
-      "endDate": "2024-01-01",
-      "summary": "Es mi actual trabajo",
+      "name": "CoderHouse",
+      "position": "Curso de Desarrollo Web",
+      "url": "https://coderhouse.com",
+      "startDate": "2022-02-27",
+      "endDate": "2022-05-04",
+      "summary": "Aqui aprendi HTML5 y CSS3, haciendo diferentes entregas de el proyecto final. La calificacion de mi proyecto final fue de 9/10",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "CoderHouse",
+      "position": "Curso de JavaScript",
+      "url": "https://coderhouse.com",
+      "startDate": "2022-02-27",
+      "endDate": "2022-05-04",
+      "summary": "Aqui aprendi JavaScript, mi proyecto fue un carrito de compras de un supermercado. La calificacion de mi proyecto final fue de 9/10",
       "highlights": ["Started the company"]
     }
   ],
