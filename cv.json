@@ -147,12 +147,28 @@
   ],
   "projects": [
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "name": "Supermercado Andres",
+      "startDate": "2023-27-03",
+      "endDate": "2023-04-05",
+      "description": "Esta fué mi primera pagina web y mi primer curso de Coderhouse",
+      "highlights": ["Supermercado"],
+      "url": "https://supermercadoandres.netlify.app"
+    },
+    {
+      "name": "Car Luxury",
+      "startDate": "2023-24-07",
+      "endDate": "2023-26-08",
+      "description": "Este fue el proyecto que tuve que entregar para el curso de JavaScript en Coderhouse",
+      "highlights": ["Consencionaria de autos", "JavaScript"],
+      "url": "https://carluxury.netlify.app"
+    },
+    {
+      "name": "Litio en Argentina",
+      "startDate": "2023-22-10",
+      "endDate": "2023-04-11",
+      "description": "Aqui hice un trabajo para mi escuela sobre el litio en Argentina",
+      "highlights": ["Litio en Argentina"],
+      "url": "https://proyecto-escuela.netlify.app"
     }
   ]
 }
