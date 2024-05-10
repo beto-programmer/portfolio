@@ -38,18 +38,6 @@ const SOCIAL_ICONS: Record<string, string | any> = {
                         </a>
                     )
                 }
-                {
-                    phone && (
-                        <a 
-                        href={'tel:${phone}'}
-                        title={`"Llamar por telefono a ${name} al numero ${phone}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <Phone />
-                        </a>
-                    )
-                }
  {
     profiles.map(({ network, username, url }) => {
       const Icon = SOCIAL_ICONS[network]
